@@ -1,2 +1,2 @@
-# halgo
-Halgo - Haskell-Algorithms
+# Halgo - Haskell-Algorithms
+
