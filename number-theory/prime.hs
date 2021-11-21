@@ -10,6 +10,7 @@
 module Prime
 (
 primes
+isPrime
 ) where
 
 import Data.List.Ordered
