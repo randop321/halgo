@@ -1,5 +1,5 @@
 {-
-	primes: an infinity list of primes with tricky implementation
+    primes: an infinity list of primes with tricky implementation
     primes !! k: return the kth prime
     
     isPrime: Miller Rabin Test to 30 tests 
