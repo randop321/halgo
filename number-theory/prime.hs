@@ -9,7 +9,7 @@
 
 module Prime
 (
-primes
+primes,
 isPrime
 ) where
 
