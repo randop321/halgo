@@ -9,3 +9,4 @@
 - Prime: 
   - Eratosthenes Sieve Algorithm: [prime](https://github.com/randop321/halgo/blob/main/number-theory/prime.hs)
   - Miller-Rabin Prime Test: [isPrime](https://github.com/randop321/halgo/blob/main/number-theory/prime.hs#L47)
+  - Pollard's Rho Factoring Algorithm: [primeFactoring](https://github.com/randop321/halgo/blob/305f6770a557762396e0427af4590b4cc930e410/number-theory/prime.hs#L89)
