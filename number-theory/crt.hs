@@ -1,4 +1,6 @@
 {-
+    chineseRemainder: Basic Chinese Remainder Theorem implementation with pairwise coprime of ai
+    chineseRemainder a b: return a number x which satisfies x = bi mod ai for every (ai,bi) in zip a b
 -}
 
 
