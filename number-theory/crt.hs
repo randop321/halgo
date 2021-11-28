@@ -8,7 +8,7 @@
         There is no garantee that any pair of bi, bj are coprimes, so no solutions may occur.
 
     chineseRemainder [(ai,bi)]:
-        return a number x which satisfies all equations, or return No Solution.
+        return a pair of numbers (x, M) represented the solution form as x+t*M, or No Solution.
 -}
 
 
