@@ -1,6 +1,14 @@
 {-
-    chineseRemainder: Basic Chinese Remainder Theorem implementation with pairwise coprime of ai
-    chineseRemainder a b: return a number x which satisfies x = bi mod ai for every (ai,bi) in zip a b
+    Chinese Remainder Theorem:
+        Given a list of modular equations:
+            x = a1 mod b1
+            x = a2 mod b2
+            ...
+        Find x satisfies all above equations.
+        There is no garantee that any pair of bi, bj are coprimes, so no solutions may occur.
+
+    chineseRemainder [(ai,bi)]:
+        return a number x which satisfies all equations, or return No Solution.
 -}
 
 
@@ -9,17 +17,21 @@ module CRT
 chineseRemainder
 ) where
 
-import Data.List.Ordered
+import Data.List
 import Extended_GCD
-import System.Random
 
-extract1of3 :: (a,a,a) -> a
-extract1of3 (a,_,_) = a
-
-chineseRemainder :: (Integral a) => [a] -> [a] -> a
-chineseRemainder a b = mod ((mod (sum [bi*si | (bi,si) <- zip b s]) m)+m) m
+exCRT :: (Integral a) => (a,a) -> (a,a) -> (a,a)
+exCRT (a,b) (c,d) = (e,f)
     where
-        m = product a
-        n = [div m ai | ai <- a]
-        k = [extract1of3 $ extended_gcd (mod ni ai) ai | (ni,ai) <- zip n a]
-        s = [mod (ni*ki) m | (ni,ki) <- zip n k]
+        (t1',t2',g) = extended_gcd b d
+        t1 = t1' * (div (c-a) g)
+        f = div (b*d) g
+        e = mod ((mod (a + t1*b) f) + f) f
+
+chineseRemainder :: (Integral a) => [(a,a)] -> (a,a)
+chineseRemainder eqs 
+    | or $ map (\(a,b) -> (mod (fst res) b) /= a) eqs = 
+        error $ "No solution."
+    | otherwise = res
+    where
+        res = foldl1 (\a b -> exCRT a b) eqs
