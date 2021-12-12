@@ -8,7 +8,7 @@
 - Extended GCD (Extended Euclidean Algorithm): [extended_gcd](https://github.com/randop321/halgo/blob/main/number-theory/extended_gcd.hs)
 - Prime: 
   - Eratosthenes Sieve Algorithm: [prime](https://github.com/randop321/halgo/blob/main/number-theory/prime.hs)
-  - Miller-Rabin Prime Test: [isPrime](https://github.com/randop321/halgo/blob/main/number-theory/prime.hs#L47)
+  - Miller-Rabin Prime Test: [isPrime](https://github.com/randop321/halgo/blob/main/number-theory/prime.hs#L51)
     - [An introduction to Miller-Rabin algorithm](https://randop321.com/2021/11/27/the-miller-rabin-algorithm-and-primality-tests/)
   - Pollard's Rho Factoring Algorithm: [primeFactoring](https://github.com/randop321/halgo/blob/305f6770a557762396e0427af4590b4cc930e410/number-theory/prime.hs#L89)
 - Chinese Remainder Theorem: 
