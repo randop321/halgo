@@ -1,6 +1,7 @@
 {-
     Quadratic residue
     sqrtRootModP n p
+        p is an odd prime
         return x^2 = n mod p
         using Tonelli-Shanks algorithm
 -}
