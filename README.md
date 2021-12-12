@@ -12,3 +12,5 @@
   - Pollard's Rho Factoring Algorithm: [primeFactoring](https://github.com/randop321/halgo/blob/305f6770a557762396e0427af4590b4cc930e410/number-theory/prime.hs#L89)
 - Chinese Remainder Theorem: 
   - general CRT without coprime constraints: [chineseRemainder](https://github.com/randop321/halgo/blob/main/number-theory/crt.hs)
+- Quadratic Residue
+  - quadratic residue under odd prime moduli(Tonelli-Shanks algorithm): [sqrtRootModP](https://github.com/randop321/halgo/blob/c48a11861107c4c07b492cb91df8d59ba6977f79/number-theory/quadratic_residue.hs#L20)
