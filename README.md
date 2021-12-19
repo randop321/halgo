@@ -10,6 +10,7 @@
   - Eratosthenes Sieve Algorithm: [prime](https://github.com/randop321/halgo/blob/main/number-theory/prime.hs)
   - Miller-Rabin Prime Test: [isPrime](https://github.com/randop321/halgo/blob/main/number-theory/prime.hs#L51)
     - [An introduction to Miller-Rabin algorithm](https://randop321.com/2021/11/27/the-miller-rabin-algorithm-and-primality-tests/)
+    - [A proof to the error bound of Miller-Rabin algorithm](https://randop321.com/2021/12/19/a-detailed-proof-of-miller-rabins-error-bound-in-1-4k/)
   - Pollard's Rho Factoring Algorithm: [primeFactoring](https://github.com/randop321/halgo/blob/305f6770a557762396e0427af4590b4cc930e410/number-theory/prime.hs#L89)
 - Chinese Remainder Theorem: 
   - general CRT without coprime constraints: [chineseRemainder](https://github.com/randop321/halgo/blob/main/number-theory/crt.hs)
